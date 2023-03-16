@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Accredited college and courses</title>
+    <link rel='shortcut icon'
+        href='https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/17089548147/fav_icon/UzsiCmhf3A-50MyX9iw_jsDZjXmgbmKicA.png' />
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="app.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.2.3/jspdf.plugin.autotable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <a href="https://sites.google.com/a/dataflowgroup.com/home-page/home" target="_blank">
+        <img src="images\Dataflow.png" style="width:200px;height:70px">
+    </a>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class='heading'>ACCREDITED COLLEGES </h1>
+                    <form id="form">
+                        <div class='labels'>
+                            <label for="country_of_study">Educational Institute :</label>
+                            <input class='dropdown' id="user-input">
+                            <label style='margin-left: 430px; height: 20px' for="years">Country :</label>
+                            <select id="user-years" name="years" class='dropdown'>
+                                <option value="India">India</option>
+                                <option value="Pakistan">Pakistan</option>
+                                <option value="UAE">UAE</option>
+                                <option value="UK">UK</option>
+                                <option value="USA">USA</option>
+                            </select>
+                            <button id="button" class="btn">Search</button>
+                    </form>
+                    <div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Educational Institute</th>
+                                    <th scope="col">State</th>
+                                    <th scope="col">Accreditation Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                        </table>
+                    </div>
+                    <div class='labels'>
+                        <label style='margin-top: 50px' for="college"> <b>If you didn't find your desired results in the
+                                table above, Please enter your Educational Institute name here:</b></label><br>
+                        <input class='dropdown' id="user-rank">
+                        <button style="font-size: 15px;background-color: coral;font-weight: bold;">Submit</button>
+                    </div>
+                </div>
+            </div>
+    </body>
+
+    </html>
