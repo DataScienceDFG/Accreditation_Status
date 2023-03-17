@@ -41,11 +41,10 @@ form.on("submit", runEnter);
       }
       for (let i = 0; i < filteredUniversities.length; i++) {
         let universityName = filteredUniversities[i]['University_Name']
-        let courseName = filteredCourses1[i]['University_Courses_Full form']
-        let universityState = filteredColleges1[i]['University State']
+        let universityState =  filteredUniversities[i]['IA_City']
         d3.select("tbody").insert("tr").html(
           "<td>" + (universityName) + "</a>" + "</td>" +
-          "<td>" + (courseName) + "</a>" + "</td>" +
+          "<td>" + ('N.A') + "</a>" + "</td>" +
           "<td>" + (universityState) + "</a>" + "</td>" +
           "<td>" + ("Accredited") + "</a>" + "</td>")}
 
